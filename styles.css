@@ -13,8 +13,18 @@ body {
     display: flex;
     min-height: 100vh;
     width: 100%;
-    background-color: #F6F7EB;
+    background-color: #fefff1;
     font-family: 'EB Garamond', serif;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 0.5%;
+}
+
+p, label {
+    color:  #ff6923;
+    font-size: 1.2rem;
 }
 
 /* Left Column - Fixed width on desktop */
@@ -78,6 +88,7 @@ body {
 .content-single .text-area {
     width: 100%;
     padding: 20px;
+    margin-top: 50px;
 }
 
 /* Option 2: Two columns (photo and text side-by-side) */
@@ -174,4 +185,32 @@ body {
         font-size: 28px;
     }
 
+}
+
+.form-wrapper {
+    display: flex;
+    border-radius: 3px;
+    padding: 1.8em;
+    flex-direction: column;
+
+    input, textarea {
+        padding: 1em;
+        margin-bottom: 1em;
+        margin-top: 0.25em;
+    }
+}
+
+
+button {
+    background-color:  #ff6923;
+    color: #fefff1;
+    border: none;
+    height: 2.5rem;
+    border-radius: 3px;
+    font-family: 'EB Garamond', serif;
+    font-size: 1.2rem;
+    &:hover {
+                background-color:  #f88149;
+                cursor: pointer;
+            }
 }
