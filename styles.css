@@ -168,16 +168,6 @@ p, label {
     /* Show when active */
     .nav-links.open {
         display: block;
-        animation-name: slide;
-    }
-
-    @keyframes slide {
-        0% {
-            transform: translate(0, -20px);
-        }
-        100% {
-            transform: translate(0, 0);
-        }
     }
 
     /* Slight spacing polish */
@@ -200,6 +190,12 @@ p, label {
     }
 }
 
+.submit {
+    &:hover  {
+                background-color:  #f88149;
+                cursor: pointer;
+            }
+}    
 
 button {
     background-color:  #ff6923;
@@ -209,8 +205,5 @@ button {
     border-radius: 3px;
     font-family: 'EB Garamond', serif;
     font-size: 1.2rem;
-    &:hover {
-                background-color:  #f88149;
-                cursor: pointer;
-            }
+ 
 }
